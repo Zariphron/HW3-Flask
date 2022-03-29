@@ -1,7 +1,7 @@
 from flask import Flask
 
-myapp_obj = Flask(__name__)
-myapp_obj.config.from_mapping(
+myobj = Flask(__name__)
+myobj.config.from_mapping(
         SECRET_KEY = 'this-is-the-secret'
         )
 
