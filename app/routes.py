@@ -13,7 +13,7 @@ class cityForm(FlaskForm):
   
 @myobj.route("/", methods=['GET','POST'])
 def home(): 
-form = cityForm()
+    form = cityForm()
     if form.validate_on_submit():
         newcity = ""
         newcity = newcity + f'{form.cityname.data}'
