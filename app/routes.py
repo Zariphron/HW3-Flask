@@ -1,10 +1,10 @@
-from app import myapp_obj
+from app import myobj
 from flask import render_template, Flask, flash, request
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 
-@myapp_obj.route("/", methods=['GET','POST'])
+@myobj.route("/", methods=['GET','POST'])
 def home():
     user = {'username': "Lisa"}
     cities = ['Paris','London','Rome','Tahiti']
