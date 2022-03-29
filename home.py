@@ -1,9 +1,9 @@
 from flask import Flask
 
-myapp_obj = Flask(__name__)
+myobj = Flask(__name__)
 
 name = "Lisa"
-@myapp_obj.route("/")
+@myobj.route("/")
 def home():
     city_list = ['Paris', 'London', 'Rome', 'Tahiti']
     outs = ""
@@ -19,4 +19,4 @@ def home():
     </html>'''
     return final_out
 
-#myapp_obj.run()
+#myobj.run()
