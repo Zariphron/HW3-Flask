@@ -4,15 +4,15 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 
-name = "Lisa"
-city_names = ['Paris','London','Rome','Tahiti'] 
 
 class cityForm(FlaskForm):
     cityname = StringField('City Name', validators=[DataRequired()])
     submit = SubmitField('Submit')
   
 @myobj.route("/", methods=['GET','POST'])
-def home(): 
+def home():
+    name = "Lisa"
+    city_names = ['Paris','London','Rome','Tahiti'] 
     form = cityForm()
     if form.validate_on_submit():
         newcity = ""
