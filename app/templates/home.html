@@ -19,13 +19,10 @@
 			{% endfor %}
 		</ul>
 		<form method='post' novalidate>
-			{{ form.hidden_tag() }}
-			<p>
-				{{ form.cityname.label }}<br>
-				{{ form.cityname(size=32) }}
-			</p>
-			
-			<p>{{ form.submit() }}</p>
+			<label>City Name</label><br>
+			<input type='text' id='cityname' name='cityname' maxlength=32><br><br>
+			<input type='hidden' id='cityForm' name='cityForm'>
+			<input type='Submit'>
 		</form>
 	</body>
 </html>
