@@ -2,9 +2,9 @@ from flask import Flask
 
 myapp_obj = Flask(__name__)
 
+name = "Lisa"
 @myapp_obj.route("/")
 def home():
-    name = "Lisa"
     city_list = ['Paris', 'London', 'Rome', 'Tahiti']
     outs = ""
     for city in city_list:
