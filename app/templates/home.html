@@ -18,11 +18,14 @@
 				<li>{{ city }}</li>
 			{% endfor %}
 		</ul>
-		<form method='post' novalidate>
-			<label>City Name</label><br>
-			<input type='text' id='cityname' name='cityname' maxlength=32><br><br>
-			<input type='hidden' id='cityForm' name='cityForm'>
-			<input type='Submit'>
+		<form name='cityForm' id='cityForm' action='../' method='post' novalidate>
+			{{ form.hidden_tag() }}
+
+			{{ form.city.label }}<br>
+			{{ form.city(maxlength=32) }}<br><br>
+
+			{{ form.submit() }}
+			
 		</form>
 	</body>
 </html>
