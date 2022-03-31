@@ -18,11 +18,11 @@
 				<li>{{ city }}</li>
 			{% endfor %}
 		</ul>
-		<form action='' method='POST' novalidate>
-			<input id='csrf_token' type="hidden">
+		<form action="" method="POST">
+			<input id="csrf_token" type="hidden">
 			<label for="city">City Name</label>
-			<input id='city' maxlength=32 name="city" required type="text" value="">
-			<input id='submit' name="submit" type="submit" value="Submit">
+			<input id="city" maxlength=32 name="city" required type="text" value="">
+			<input id="submit" name="submit" type="submit" value="Submit">
 		</form>
 	</body>
 </html>
